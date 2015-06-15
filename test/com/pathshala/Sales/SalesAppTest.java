@@ -45,4 +45,6 @@ public class SalesAppTest {
 
         assertThat(expectedInput, is(expectedInput));
     }
+
+
 }

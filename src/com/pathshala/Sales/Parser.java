@@ -14,6 +14,8 @@ public class Parser {
 
     public Item parse(String userInput) {
 
+        if(userInput == "-1")return null;
+
         int amount = Integer.parseInt(userInput.split(" ")[0]);
         boolean isImported = userInput.split(" ")[1].contains("imported");
         double basePrice = Integer.parseInt(userInput.split(" ")[1].split(" at ")[1]);

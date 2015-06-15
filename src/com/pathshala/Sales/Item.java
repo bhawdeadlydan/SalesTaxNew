@@ -59,4 +59,20 @@ public class Item {
         result = 31 * result + (name != null ? name.hashCode() : 0);
         return result;
     }
+
+    public double calculateSalesTax() {
+        if (!isFoodBookMedical) {
+            return 0.1 * basePrice;
+        }
+    }
+
+    public double calculateImportDuty() {
+        if (isImported) {
+            return 0.05 * basePrice;
+        }
+    }
+
+    public double price() {
+        return basePrice + calculateSalesTax()+calculateImportDuty();
+    }
 }

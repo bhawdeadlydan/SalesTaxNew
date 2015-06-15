@@ -65,4 +65,9 @@ public class ItemTest {
         assertThat(actual, is(true));
     }
 
+    @Test
+    public void shouldCalculateSalesTax() {
+
+    }
+
 }

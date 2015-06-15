@@ -14,6 +14,17 @@ public class SalesApp {
     }
 
     public void start() {
+        double totalSalesTax;
+        double totalPrice;
+        Item item = new Item();
         String userInput = view.readLine();
+        while (item != null) {
+            item = parser.parse(userInput);
+            itemList.add(item);
+        }
+        for(Item itemToOutput : itemList)
+            view.print(itemToOutput.toString());
+        totalSalesTax += itemToOutput.calculateSalesTax();
+        totalPrice += itemToOutput.price();
     }
 }

@@ -12,4 +12,8 @@ public class View {
     public String readLine() {
         return scanner.nextLine();
     }
+
+    public void print(String message){
+        System.out.println(message);
+    }
 }
