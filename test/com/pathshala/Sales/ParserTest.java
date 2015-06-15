@@ -2,16 +2,13 @@ package com.pathshala.Sales;
 
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.Scanner;
+
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertEquals;
 
 public class ParserTest {
 
-    @Test
-    public void shouldParseUserInput() {
-        View view = new View(new Scanner(System.in));
-        Parser parser = new Parser(view);
-
-
-    }
-
+    
 }
