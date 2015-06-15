@@ -8,11 +8,7 @@ public class Parser {
 
     public Parser(View view, HashMap<String, String[]> masterList) {
         this.masterList = masterList;
-        masterList.put("food", new String[]{"FoodBookMedical", "FALSE"});
-        masterList.put("music CD", new String[]{"", "FALSE"});
-        masterList.put("bottle of perfume", new String[]{"", "FALSE"});
-        masterList.put("packet of headache pills", new String[]{"FoodBookMedical", "FALSE"});
-        masterList.put("box of chocolates", new String[]{"", "FALSE"});
+
         this.view = view;
     }
 
