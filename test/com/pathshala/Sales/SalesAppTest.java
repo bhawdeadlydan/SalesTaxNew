@@ -1,8 +1,8 @@
 package com.pathshala.Sales;
 
-import org.junit.Test;
-
 public class SalesAppTest {
-    
+    public void start() {
+
+    }
 
 }
